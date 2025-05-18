@@ -1,28 +1,28 @@
-// Simulación del algoritmo de arranque del coche
+// The Car Won't Start
 
-let viveCerca = prompt("¿Vives cerca? (sí/no)").toLowerCase() === "sí";
-let ganasCaminar = prompt("¿Tienes ganas de caminar? (sí/no)").toLowerCase() === "sí";
+let liveNearby = prompt("Do you live nearby? (yes/no)").toLowerCase() === "yes";
+let wantWalk = prompt("Do you feel like walking? (yes/no)").toLowerCase() === "yes";
 
-if (viveCerca && ganasCaminar) {
-  alert("Te vas andando y ya lo arreglarás mañana.");
+if (liveNearby && wantWalk) {
+  alert("You go on foot and you'll fix it tomorrow");
 } else {
-  let tieneGasolina = prompt("¿El coche tiene gasolina? (sí/no)").toLowerCase() === "sí";
+  let hasGasoline = prompt("Does the car have gasoline? (yes/no)").toLowerCase() === "yes";
 
-  if (!tieneGasolina) {
-    let tieneDinero = prompt("¿Tienes dinero para poner gasolina? (sí/no)").toLowerCase() === "sí";
+  if (!hasGasoline) {
+    let haveMoney = prompt("Do you have money for gasoline? (yes/no)").toLowerCase() === "yes";
 
-    if (tieneDinero) {
-      alert("Pones gasolina.");
+    if (hasGasoline) {
+      alert("You put gasoline");
     } else {
-      alert("Vas en metro.");
+      alert("You go on underground");
     }
   } else {
-    let tieneBateria = prompt("¿Tiene batería el coche? (sí/no)").toLowerCase() === "sí";
+    let hasBattery = prompt("Does the car have a battery? (yes/no)").toLowerCase() === "yes";
 
-    if (!tieneBateria) {
-      alert("Recarga la batería.");
+    if (!hasBattery) {
+      alert("Charge the battery");
     } else {
-      alert("Pásate por el mecánico.");
+      alert("Stop by the mechanic");
     }
   }
 }
