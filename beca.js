@@ -1,16 +1,16 @@
 // BECA ESTUDIANTE - Versión interactiva con prompt y alert
 
-let edad = parseInt(prompt("Introduce tu edad:"));
-let ciudad = prompt("¿En qué ciudad resides?").toLowerCase();
-let tieneFamiliaNumerosa = prompt("¿Tienes familia numerosa? (sí/no)").toLowerCase() === "sí";
-let esGenioProgramacion = prompt("¿Eres un genio de la programación? (sí/no)").toLowerCase() === "sí";
+let age = parseInt(prompt("Enter your age:"));
+let city = prompt("In which city do you reside??").toLowerCase();
+let haveLargeFamily = prompt("Do you have a large family? (yes/no)").toLowerCase() === "yes";
+let isProgrammingGenius = prompt("Are you a programming genius? (yes/no)").toLowerCase() === "yes";
 
-let cumpleCondicion1 = edad >= 18 && ciudad === "barcelona";
-let cumpleCondicion2 = edad > 30 && tieneFamiliaNumerosa;
-let cumpleCondicion3 = edad >= 12 && edad <= 18 && esGenioProgramacion;
+let meetCondition1 = age >= 18 && city === "barcelona";
+let meetCondition2 = age > 30 && haveLargeFamily;
+let meetCondition3 = age >= 12 && age <= 18 && isProgrammingGenius;
 
-if (cumpleCondicion1 || cumpleCondicion2 || cumpleCondicion3) {
-  alert("¡Felicidades! Cumples con los requisitos para obtener la beca.");
+if (meetCondition1 || meetCondition2 || meetCondition3) {
+  alert("Congratulations! You meet the requirements for the scholarship");
 } else {
-  alert("Lo sentimos, no cumples con los requisitos para la beca.");
+  alert("Sorry, you do not meet the requirements for the scholarship");
 }
